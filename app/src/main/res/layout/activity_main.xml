@@ -1,0 +1,74 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_team_a_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button_team_a_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team A Scored"
+        android:onClick="teamAScored" />
+
+    <TextView
+        android:id="@+id/text_team_b_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:text="0" />
+
+    <Button
+        android:id="@+id/button_team_b_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Team B Scored"
+        android:onClick="teamBScored" />
+
+    <TextView
+        android:id="@+id/text_victories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Time A SETS: 0" />
+
+
+    <TextView
+        android:id="@+id/text_victories1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time B SETS: 0"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_resultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_resultado1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetScore"
+        android:text="Reset" />
+
+</LinearLayout>
